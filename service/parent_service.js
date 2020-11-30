@@ -7,6 +7,11 @@ const ViewTicketsById = require('./ViewTicketsById');
 const UpdateTicketById = require('./UpdateTicketsById');
 const PostChatWithUserId = require('./PostChatWithUserId');
 const ViewChatHistoryById = require('./ViewChatHistoryById');
+const TeamRegistration = require('./TeamRegistration');
+const ViewTeam = require('./ViewTeam');
+const EditTeam = require('./EditTeam');
+const TeamTicketAssignment = require('./TeamTicketAssignment');
+
 module.exports = {
     LoginRegsistration,
     LoginAuthentication,
@@ -15,7 +20,11 @@ module.exports = {
     ViewTicketsById,
     UpdateTicketById,
     PostChatWithUserId,
-    ViewChatHistoryById
+    ViewChatHistoryById,
+    TeamRegistration,
+    ViewTeam,
+    EditTeam,
+    TeamTicketAssignment
 };
 
 

@@ -7,6 +7,12 @@ const UpdateTicketByIdController = require('./UpdateTicketByIdController');
 const PostChatWithUserIdController = require('./PostChatWithUserIdController');
 const ViewChatHistoryByIdController = require('./ViewVhatHistoryByIdController');
 
+const TeamRegistrationController = require('./TeamRegistrationController');
+const ViewTeamController = require('./ViewTeamController');
+const EditTeamController = require('./EditTeamController');
+
+const TeamTicketAssignment = require('./TeamTicketAssignment');
+
 module.exports = {
     LoginRegistrationController,
     AuthenticationController,
@@ -15,5 +21,10 @@ module.exports = {
     ViewTicketByIdController,
     UpdateTicketByIdController,
     PostChatWithUserIdController,
-    ViewChatHistoryByIdController
+    ViewChatHistoryByIdController,
+    TeamRegistrationController,
+    ViewTeamController,
+    EditTeamController,
+
+    TeamTicketAssignment
 };

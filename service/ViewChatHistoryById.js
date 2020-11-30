@@ -26,10 +26,18 @@ const ViewChatHistoryById = async (userParam) => {
             else
             {
                 console.log("registared_ticket")
-                console.log(data[0].ticket_related_comments_user_comments_object)
+                if(data[0])
                 resolve( { status:201 , message: "Chat Details fetched Successfully" , data : data[0].ticket_related_comments_user_comments_object } );
+                else
+                resolve( { status:201 , message: "Chat Details fetched Successfully" , data : []} );
             }
         })
+        .catch(error=>{
+            console.log("error1")
+            console.log(error)
+            reject({status:500 , message:error });
+        })
+
 
     });
 }
