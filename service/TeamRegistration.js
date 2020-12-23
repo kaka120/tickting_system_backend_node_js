@@ -1,8 +1,8 @@
 
 const bcrypt = require('bcryptjs');
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/test_db", {  useCreateIndex: true });
-mongoose.Promise = global.Promise;
+// const mongoose = require('mongoose');
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/test_db", {  useCreateIndex: true });
+// mongoose.Promise = global.Promise;
 
 const team_registration = require('../model/team_registration');
 

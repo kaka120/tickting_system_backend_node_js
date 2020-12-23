@@ -2,9 +2,9 @@
 //const service_library_support = require('../helpers/service_library_support');
 
 const bcrypt = require('bcryptjs');
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/test_db", {  useCreateIndex: true });
-mongoose.Promise = global.Promise;
+// const mongoose = require('mongoose');
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/test_db", {  useCreateIndex: true });
+// mongoose.Promise = global.Promise;
 
 const chat_group_model = require('../model/chat_group');
 const login_model = require('../model/login_model');
